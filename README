@@ -1,0 +1,13 @@
+This application helps you test a SOAP web service. It has a dependency on Apache Axis 1.4 and 
+Apache Axis Monitor
+
+It has been developed using Netbeans 6.7
+
+To run it, follow these steps:
+
+
+* Run axis monitor:  java -cp /home/pvillega/.m2/repository/axis/axis/1.4/axis-1.4.jar org.apache.axis.utils.tcpmon
+* Set up a proxy on port 8080 to intercept calls
+* run the application:
+  java -jar <jar file> <wsdlURL> <namespace> <server name> <fnc name> <connect port> <query (optional)>
+
